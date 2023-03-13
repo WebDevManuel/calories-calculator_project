@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/Calculator.ico">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Calories Calculator</title>
+</head>
+
+<body>
+    <main>
+        <section class="calculator">
+            <h1>Calories Calculator</h1>
+            <div class="container">
+                <h2>Bodysize</h2>
+                <input class="size" type="number" placeholder="Type here" step="0.01" value="150" required>
+            </div>
+            <div class="container">
+                <h2>Bodyweight</h2>
+                <input class="weight" type="number" placeholder="Type here" step="0.01" value="50" required>
+            </div>
+            <div class="container">
+                <h2>Age</h2>
+                <input class="age" type="number" placeholder="Type here" step="0.01" value="35" required>
+            </div>
+            <div class="container">
+                <h2>Sex</h2>
+                <div>
+                    <input type="radio" name="sex" id="male" value="male">
+                    <label for="sex">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="sex" id="female" value="female" checked>
+                    <label for="sex">Female</label>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Work And Leisure Activity</h2>
+                <div>
+                    <select name="mylist" id="myList">
+                        <option value="1"></option>
+                        <option value="0.95">Schlafen</option>
+                        <option value="1.2">Nur Sitzen oder Liegen</option>
+                        <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                            Aktivität
+                            in der Freizeit, z.B. Büroarbeit</option>
+                        <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                            Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                        <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                            Handwerker, Mechaniker, Hausfrauen</option>
+                        <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="calCalc()">CALCULATE</button>
+            <section>
+                <h3 class="result">Result</h3>
+                <div class="container">
+                    <p class="result__txt">Basal Metabolic Rate</p>
+                    <p class="result__bmr"></p>
+                </div>
+                <div class="container">
+                    <p class="result__txt">Total Metabolic Rate</p>
+                    <p class="result__total"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
+<!-- sass --watch assets/scss/style.scss assets/css/style.css -->

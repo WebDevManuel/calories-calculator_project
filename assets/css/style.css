@@ -1,0 +1,106 @@
+/*######################################
+                GENERAL
+######################################*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "jakarta";
+  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+}
+/*######################################
+                HEADER
+######################################*/
+h1 {
+  color: #2595FF;
+  font-size: 2em;
+  padding: 2vh 0;
+  text-align: center;
+}
+
+h3 {
+  color: #2595FF;
+  margin: 0 10px;
+}
+
+span {
+  color: orangered;
+}
+
+/*######################################
+                MAIN
+######################################*/
+body {
+  color: #fff;
+  font-family: "jakarta";
+  background-color: #2D2D2D;
+}
+body main {
+  /* .container:nth-of-type(3) {
+      margin: 0;
+  } */
+}
+body main .calculator {
+  width: 450px;
+  margin: 5vh auto;
+  border: 1px solid #4A545C;
+  border-radius: 7px;
+  box-shadow: 0px 0px 16px 2px #000000;
+  padding: 0 10px;
+}
+body main .container {
+  background-color: #383838;
+  margin: 0 0 2vh;
+  padding: 10px 10px;
+  border: 1px solid #4A545C;
+  border-radius: 7px;
+}
+body main .container label[for=nonFood] {
+  padding: 0 5px 0 0;
+}
+body main .container select,
+body main .container input[type=number] {
+  background-color: #383838;
+  border: none;
+  font-family: "jakarta";
+  font-size: 1em;
+  color: #fff;
+  border-bottom: 2px solid #246DD3;
+  width: 54%;
+}
+body main .container select,
+body main .container input[type=number]:focus {
+  outline: none;
+}
+body main .container input[type=number]::-webkit-outer-spin-button,
+body main .container input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body main .container select {
+  width: 100%;
+}
+body main button {
+  width: 100%;
+  padding: 5px 0;
+  margin: 1vh 0 0;
+  background-color: #246DD3;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1em;
+  font-family: "jakarta";
+  font-weight: 600;
+}
+body main button:hover {
+  background-color: #2595FF;
+  transition: background-color 0.2s ease-in-out 100ms;
+}
+body main .result {
+  padding: 4vh 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */
